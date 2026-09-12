@@ -1,0 +1,127 @@
+:root {
+    --bg-color: #000000;
+    --card-bg: #030303;
+    --text-main: rgb(0,255,0);
+    --text-muted: #ffffff;
+    --border: #e0e0e0;
+    --success: rgb(0,255,0);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: left;
+    margin-bottom: 30px;
+    padding-left: 50px;
+}
+
+.checklist-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 20px;
+    max-width: 1300px;
+    margin: 50px auto;
+}
+
+.test-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.2s ease-in-out;
+}
+
+/* State when a task is checked off */
+.test-card.completed {
+    background-color: var(--success);
+    opacity: 0.8;
+}
+
+.test-card.completed .task-title {
+    text-decoration: line-through;
+    color: rgb(0, 0, 0);
+}
+
+/* --- Checkbox Header Alignment --- */
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.checkbox-wrapper {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.task-check {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.task-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.task-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    flex-grow: 1;
+}
+
+.task-link {
+    font-size: 0.85rem;
+    color: rgb(0,255,0);
+    font-weight: bold;
+    background: rgb(50,50,50);
+    padding: 6px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.have-fun {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(0,255,0);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.action-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: auto;
+    width: 100%;
+}
+
+.cmdLine {
+    background-color: #525252;
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    border-radius: 5px;
+}
