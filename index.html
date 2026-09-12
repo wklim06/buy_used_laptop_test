@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Laptop Inspection Checklist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 style="color: rgb(0,255,0);">Used Laptop Testing Hub</h1>
+        <p style="color: #ffffff;">Complete this checklist before buying a secondhand or refurbished laptop.</p>
+    </header>
+
+    <main class="checklist-container">
+        <div class="test-card">
+            <div class="card-header">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" class="task-check">
+                </label>
+                <span class="task-title">Keyboard</span>
+            </div>
+            <p class="task-desc">Slide through every single clickable key. Key-Test may work for both Windows and macOS.</p>
+            <div class="action-group">
+                <a class="task-link" href="https://www.zfrontier.com/lab/keyboardTester" target="_blank">ZFrontier Keyboard Tester</a>
+                <a class="task-link" href="https://en.key-test.ru/" target="_blank">Key-Test</a>
+            </div>
+        </div>
+
+        <div class="test-card">
+            <div class="card-header">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" class="task-check">
+                </label>
+                <span class="task-title">Trackpad</span>
+            </div>
+            <p class="task-desc">Drag click an item on Desktop and slide on the trackpad randomly to check any issues.</p>
+        </div>
+
+        <div class="test-card">
+            <div class="card-header">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" class="task-check">
+                </label>
+                <span class="task-title">Webcam</span>
+            </div>
+            <p class="task-desc">Use the built-in Camera app will do. Otherwise, you may use the webcam tester.</p>
+            <div class="action-group">
+                <a class="task-link" href="https://webcamtests.com/" target="_blank">Webcam Tests</a>
+            </div>
+        </div>
+
+        <div class="test-card">
+            <div class="card-header">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" class="task-check">
+                </label>
+                <span class="task-title">Microphone</span>
+            </div>
+            <p class="task-desc">Use the built-in Sound Recorder app. Otherwise, you may use the microphone tester.</p>
+            <div class="action-group">
+                <a class="task-link" href="https://microphone-test.com/" target="_blank">Microphone Test</a>
+            </div>
+        </div>
+
+        <div class="test-card">
+            <div class="card-header">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" class="task-check">
+                </label>
+                <span class="task-title">Speakers</span>
+            </div>
+            <p class="task-desc">Play audio to test maximum volume and Left/Right stereo balance.</p>
+            <div class="action-group">
+                <a class="task-link" href="https://www.youtube.com/watch?v=6TWJaFD6R2s" target="_blank">Stereo Sound Test</a>
+            </div>
+        </div>
+
+        <div class="test-card">
+            <div class="card-header">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" class="task-check">
+                </label>
+                <span class="task-title">Display</span>
+            </div>
+            <p class="task-desc">Check for dead/stuck pixels.</p>
+            <div class="action-group">
+                <a class="task-link" href="https://www.ifreesite.com/screen-test/" target="_blank">Screen Test</a>
+                <a class="task-link" href="https://www.youtube.com/watch?v=mkggXE5e2yk" target="_blank">YouTube 4K HDR 60fps</a>
+            </div>
+        </div>
+
+        <div class="test-card">
+            <div class="card-header">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" class="task-check">
+                </label>
+                <span class="task-title">Storage</span>
+            </div>
+            <p class="task-desc">1. Use CrystalDiskInfo to check the health of the SSD/HDD.</p>
+            <p class="task-desc">2. Open cmd and run <code class="cmdLine">Get-PhysicalDisk</code>. Check for "OperationalStatus" and "HealthStatus".</p>
+            <div class="action-group">
+                <a class="task-link" href="https://crystalmark.info/en/download/" target="_blank">CrystalDiskInfo</a>
+            </div>
+        </div>
+
+        <div class="test-card">
+            <div class="card-header">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" class="task-check">
+                </label>
+                <span class="task-title">RAM</span>
+            </div>
+            <p class="task-desc">Need to prepare a empty usb flash drive for the test. To verify total RAM capacity and check for memory errors.</p>
+            <div class="action-group">
+                <a class="task-link" href="https://www.memtest.org/" target="_blank">Memtest86</a>
+            </div>
+        </div>
+
+        <div class="test-card">
+            <div class="card-header">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" class="task-check">
+                </label>
+                <span class="task-title">Battery Health</span>
+            </div>
+            <p class="task-desc">Open cmd and run <code class="cmdLine">powercfg /batteryreport</code> to check wear level. Check the output line for report location.</p>
+            <p class="task-desc">Open the report and search for "DESIGN CAPACITY" and "FULL CHARGE CAPACITY" for healthy percentage.</p>
+        </div>
+
+        <div class="test-card">
+            <div class="card-header">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" class="task-check">
+                </label>
+                <span class="task-title">BIOS (Especially ThinkPads)</span>
+            </div>
+            <p class="task-desc">Restart and enter BIOS. Go to Security -> Password, make sure all disabled. Under Security, go Anti-Theft -> Computrace, Current Setting Disabled.</p>
+        </div>
+
+        <div class="test-card">
+            <div class="card-header">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" class="task-check">
+                </label>
+                <span class="task-title">Bluetooth</span>
+            </div>
+            <p class="task-desc">Try to connect a bluetooth headphone, mouse, keyboard or anything else to check.</p>
+        </div>
+
+        <div class="test-card">
+            <div class="card-header">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" class="task-check">
+                </label>
+                <span class="task-title">Wi-Fi</span>
+            </div>
+            <p class="task-desc">Connect to any Wi-Fi or hotspot and run a speedtest to ensure the Wi-Fi working.</p>
+            <div class="action-group">
+                <a class="task-link" href="https://www.speedtest.net/" target="_blank">Ookla Speedtest</a>
+            </div>
+        </div>
+
+        <div class="test-card">
+            <div class="card-header">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" class="task-check">
+                </label>
+                <span class="task-title">Serial Number</span>
+            </div>
+            <p class="task-desc">Verify the SN on the bottom chassis matches the BIOS, and check official warranty status.</p>
+            <div class="action-group">
+                <a class="task-link" href="https://pcsupport.lenovo.com/us/en/warranty-lookup#/" target="_blank">Lenovo</a>
+                <a class="task-link" href="https://www.acer.com/my-en/support" target="_blank">Acer</a>
+                <a class="task-link" href="https://account.msi.com/en/services/warranty-book" target="_blank">MSI</a>
+                <a class="task-link" href="https://www.asus.com/support/warranty-status-inquiry/" target="_blank">ASUS</a>
+                <a class="task-link" href="https://checkcoverage.apple.com/?locale=en_US" target="_blank">Apple</a>
+                <a class="task-link" href="https://support.hp.com/my-en/check-warranty" target="_blank">HP</a>
+                <a class="task-link" href="https://www.dell.com/support/contractservices/en-us" target="_blank">Dell</a>
+                <a class="task-link" href="https://www.honor.com/my/support/warranty-query/" target="_blank">Honor</a>
+                <a class="task-link" href="https://consumer.huawei.com/my/support/warranty-query/" target="_blank">Huawei</a>
+            </div>
+        </div>
+
+        <div class="test-card">
+            <div class="card-header">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" class="task-check">
+                </label>
+                <span class="task-title">Physical Ports</span>
+            </div>
+            <p class="task-desc">Plug and test charging port, USB-A, USB-C, HDMI, Audio Jack, Audio-Mic Combo Jack, Ethernet port, sd card slot, </p>
+        </div>
+
+        <div class="test-card">
+            <div class="card-header">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" class="task-check">
+                </label>
+                <span class="task-title">Fingerprint Scanner</span>
+            </div>
+            <p class="task-desc">Win+I to open settings -> Accounts -> Sign-in options -> Fingerprint recognition (Windows Hello) -> Set up.</p>
+            <p class="task-desc">To see whether the scanner works properly, try using it to unlock the laptop.</p>
+        </div>
+
+        <div class="test-card">
+            <div class="card-header">
+                <label class="checkbox-wrapper">
+                    <input type="checkbox" class="task-check">
+                </label>
+                <span class="task-title">Pressure Testing</span>
+            </div>
+            <p class="task-desc">Run FurMark to do a intensive GPU stress test for about 15 to 30 minutes.</p>
+            <div class="action-group">
+                <a class="task-link" href="https://geeks3d.com/furmark/" target="_blank">FurMark</a>
+            </div>
+        </div>
+    </main>
+
+    <div class="have-fun">
+            Have fun with your new laptop!
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
